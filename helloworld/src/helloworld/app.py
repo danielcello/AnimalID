@@ -2,6 +2,7 @@
 My first application
 """
 from tkinter import _Padding
+from turtle import title
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
@@ -23,7 +24,7 @@ class HelloWorld(toga.App):
             'Your name: ',
             style=Pack(padding=(0, 5))
         )
-        self.name_input = toga.TextInput(style=Pack(direction=ROW, padding=5))
+        self.name_input = toga.TextInput(style=Pack(flex=1))
 
         name_box = toga.Box(style=Pack(direction=ROW, padding=5))
         name_box.add(name_label)
@@ -36,11 +37,15 @@ class HelloWorld(toga.App):
         )
 
         main_box.add(name_box)
-        main_box.add
+        main_box.add(button)
 
         self.main_window = toga.MainWindow(title=self.formal_name)
         self.main_window.content = main_box
         self.main_window.show()
+
+    
+    def say_hello(self, widget):
+        print("Hello", self.name_input.value)
 
 
 def main():
