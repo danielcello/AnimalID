@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="H:\Github\Repo\AnimalID\beeware-venv"
+VIRTUAL_ENV="C:\Users\danie\Documents\GitHub\AnimalID\beeware-venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

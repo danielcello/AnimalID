@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=H:\Github\Repo\AnimalID\beeware-venv
+set VIRTUAL_ENV=C:\Users\danie\Documents\GitHub\AnimalID\beeware-venv
 
 if not defined PROMPT set PROMPT=$P$G
 
