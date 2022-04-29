@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "Hello World"
+bundle = "xyz.dewniel"
+version = "0.0.1"
+url = "https://dewniel.xyz/hellodude"
+license = "Other"
+author = 'Dewniel'
+author_email = "dewnielc@gmail.com"
+
+[tool.briefcase.app.hellodude]
+formal_name = "Hello World"
+description = "AAAAAA"
+icon = "src/hellodude/resources/hellodude"
+sources = ['src/hellodude']
+requires = [
+]
+
+
+[tool.briefcase.app.hellodude.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.hellodude.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev32',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.hellodude.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev32',
+]
+
+# Mobile deployments
+[tool.briefcase.app.hellodude.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.hellodude.android]
+requires = [
+    'toga-android>=0.3.0.dev32'
+]

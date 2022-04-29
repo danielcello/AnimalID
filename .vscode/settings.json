@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./helloworld/windows/msi/Hello World/src/app_packages"
+    ]
+}
